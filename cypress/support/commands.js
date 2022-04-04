@@ -33,3 +33,9 @@ Cypress.Commands.add('search', (value) =>{
         cy.wait(4000);
     }) 
 })
+
+Cypress.Commands.add('searchResult', (value) =>{
+    cy.fixture('searchResult').then((searchResult) =>{
+        cy.get(searchResult.alert).should('contain', value); //debe contener la palabra dress
+    })
+})
