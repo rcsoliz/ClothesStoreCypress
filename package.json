@@ -1,0 +1,19 @@
+{
+  "name": "clothesstore",
+  "version": "1.0.0",
+  "description": "Test automization of system of Stored",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stored",
+    "qu",
+    "automization"
+  ],
+  "author": "Roberto Soliz",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.3"
+  }
+}
