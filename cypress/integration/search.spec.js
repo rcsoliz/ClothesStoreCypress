@@ -17,4 +17,12 @@ describe('Search elements', () =>{
             cy.get(searchResult.alert).should('contain', 'No results were found for your search'); //debe contener la palabra dress
         })
     })
+    it('search for elements with special code',()=>{
+        cy.readFile('cypress/support/text/search.txt').then((text)=>{
+            cy.search(text);
+        })
+        cy.fixture('searchResult').then((searchResult) =>{
+            cy.get(searchResult.alert).should('contain', 'No results were found for your search'); //debe contener la palabra dress
+        })
+    })
 })
